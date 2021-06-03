@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Sigmar One', cursive;
+    background: whitesmoke;
+}
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+/* loader */
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9) ;
+}
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Image Container  */
+/* .image-container{
+    margin: 10px 30%;
+}
+.image-container img{
+    width: 100%;
+    margin-top: 5px;
+} */
+
+.image-container {
+    margin: 10px 15%;
+    columns: 2;
+    column-gap: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+    transition: transform .7s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+
+  .unsplash-link {
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(17, 7, 7);
+  }
+  .unsplash-link:visited {
+    text-decoration: none;
+    color: rgb(17, 7, 7);
+  }
+  .unsplash-link:hover {
+    text-decoration: none;
+    color: rgb(17, 7, 7);
+  }
+  .unsplash-link:active {
+    text-decoration: none;
+    color: rgb(17, 7, 7);
+  }
+
+/* Media Query: Large Smartphone */
+/* Large phone */
+@media screen and (max-width: 1000px) {
+    .image-container {
+      columns: 2;
+      margin: 10px 2%;
+    }
+    }
+    
+    
+    @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 30px;
+    }
+    
+    .image-container {
+      margin: 10px;
+      columns: 1;
+    }
+    }
